@@ -1,0 +1,3 @@
+Extract of liblwgeom library required for conversion of WKB to TWKB.
+
+See included license text from corresponding PostGIS source code.
