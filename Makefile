@@ -6,7 +6,7 @@ CC  := gcc
 
 SQLITE_LIB=-lsqlite3
 
-LD_EXTRA_OPTIONS += -pthread -lgeos_c
+LD_EXTRA_OPTIONS += -pthread -lgeos_c -lproj
 #LD_EXTRA_OPTIONS += -ldl -static-libgcc -static-libstdc++
 
 CXX_EXTRA_OPTIONS += 
