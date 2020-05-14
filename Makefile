@@ -26,9 +26,9 @@ OBJS	= $(patsubst $(SRCSUBDIR)/%.cpp,$(OBJSUBDIR)/%.o,$(wildcard $(SRCSUBDIR)/*.
 
 OBJS_LWGEOM = $(patsubst liblwgeom/src/%.c,$(OBJSUBDIR)/liblwgeom_%.o,$(wildcard liblwgeom/src/*.c))
 
-CXX_EXTRA_OPTIONS += -std=c++11
+CXX_EXTRA_OPTIONS += -std=c++11 -DACCEPT_USE_OF_DEPRECATED_PROJ_API_H=1
 CXXFLAGS := -O2 -g $(EXTRA_OPTIONS) $(CXX_EXTRA_OPTIONS) $(INCLUDE)
-CFLAGS := -O2 -g $(INCLUDE) 
+CFLAGS := -O2 -g $(INCLUDE) -DACCEPT_USE_OF_DEPRECATED_PROJ_API_H=1
 
 AR       = ar 
 LD	 = g++ 
